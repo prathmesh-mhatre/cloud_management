@@ -1,5 +1,11 @@
+import React from "react";
+import Onboarding from "./Components/Onboarding";
 function App() {
-  return <h1>Cloud management application</h1>;
+  return (
+    <>
+      <Onboarding />
+    </>
+  );
 }
 
 export default App;

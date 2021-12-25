@@ -1,1 +1,53 @@
+:root {
+  --clr-background: rgb(255, 255, 255);
+}
 
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--clr-background);
+}
+
+/*
+=============== 
+OnboardingStyles
+===============
+*/
+
+.onboardingArt {
+  width: 100%;
+}
+
+.onboardingIcon {
+  margin-top: 20px;
+  margin-left: 260px;
+}
+
+.onboardingCaption {
+  width: 209px;
+  height: 66px;
+  color: rgb(36, 40, 51);
+  font-size: 24px;
+  font-family: AvenirNext-DemiBold;
+  font-weight: 600;
+  text-align: right;
+  margin-top: -185px;
+  margin-left: 140px;
+}
+
+@media screen and (min-width: 800px) {
+  .onboardingArt {
+    width: 400px;
+  }
+
+  body {
+    display: flex;
+    justify-content: center;
+  }
+}
