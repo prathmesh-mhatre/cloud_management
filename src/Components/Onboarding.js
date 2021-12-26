@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 import onboarding_art from "../assets/onboarding_art.png";
 import onboarding_icon from "../assets/onboarding_icon.png";
 
@@ -16,9 +16,9 @@ function Onboarding() {
       <div className="onboardingCaption">
         <p>Your cloud storage safe and sound</p>
       </div>
-      <div className="onboardingIcon">
+      <Link to="/Home" className="onboardingIcon">
         <img src={onboarding_icon} alt="icon with righ arrow" />
-      </div>
+      </Link>
     </>
   );
 }
