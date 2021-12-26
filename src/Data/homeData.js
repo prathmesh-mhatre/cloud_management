@@ -1,11 +1,12 @@
 const homeData = {
-  userName: "Jessie",
+  userName: "Prathmesh",
   freeData: 35.2,
   folders: [
     {
+      id: 1,
       folderName: "The next big thing",
       subFolders: 7,
-      floderSize: "2.1 gb",
+      folderSize: "2.1 gb",
       users: [
         {
           profilePicture:
@@ -50,9 +51,10 @@ const homeData = {
       ],
     },
     {
+      id: 2,
       folderName: "Top Secret",
       subFolders: 7,
-      floderSize: "523 mb",
+      folderSize: "523 mb",
       users: [
         {
           profilePicture:
@@ -77,9 +79,10 @@ const homeData = {
       ],
     },
     {
+      id: 3,
       folderName: "Freebie Project",
       subFolders: 3,
-      floderSize: "192 mb",
+      folderSize: "192 mb",
       users: [
         {
           profilePicture:
@@ -96,9 +99,10 @@ const homeData = {
       ],
     },
     {
+      id: 4,
       folderName: "London Meetup",
       subFolders: 453,
-      floderSize: "1.7 gb",
+      folderSize: "1.7 gb",
       users: [
         {
           profilePicture:
@@ -132,3 +136,5 @@ const homeData = {
     },
   ],
 };
+
+export default homeData;

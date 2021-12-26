@@ -1,18 +1,20 @@
 import React from "react";
 import button_small from "../assets/buttons_small.png";
-
+import homeData from "../Data/homeData";
+import FolderCard from "./FolderCard";
 let i = "35%";
 
 function Home() {
+  console.log(homeData);
   return (
     <>
       <div className="home-container">
         <div className="sub-container">
           <section className="greeting-section">
-            <div className="greeting">Hello Jessie, </div>
+            <div className="greeting">Hello {homeData.userName}, </div>
             <div className="sub-text">at the moment you have</div>
             <div className="free-storage">
-              <div className="storage-amount">32,5 GB</div>
+              <div className="storage-amount">{homeData.freeData} GB</div>
               <div className="sub-text2">of 100 GB free</div>
               <img
                 src={button_small}
@@ -42,6 +44,19 @@ function Home() {
             <div className="toggle-left"></div>
           </div>
           <div className="grey-bar"></div>
+          <section className="cards">
+            {homeData.folders.map((folder) => {
+              return (
+                <FolderCard
+                  key={folder.id}
+                  folderName={folder.folderName}
+                  folderSize={folder.folderSize}
+                  subFolders={folder.subFolders}
+                  users={folder.users}
+                />
+              );
+            })}
+          </section>
         </section>
       </div>
     </>
