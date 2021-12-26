@@ -1,5 +1,5 @@
 import React from "react";
-import onboarding_icon from "../assets/onboarding_icon.png";
+import button_small from "../assets/buttons_small.png";
 
 let i = "35%";
 
@@ -15,7 +15,7 @@ function Home() {
               <div className="storage-amount">32,5 GB</div>
               <div className="sub-text2">of 100 GB free</div>
               <img
-                src={onboarding_icon}
+                src={button_small}
                 className="up-arrow"
                 alt=" upword arrow icon"
               />
@@ -37,6 +37,11 @@ function Home() {
             <div className="tab">Files</div>
             <div className="tab">FOLDERS</div>
           </section>
+          <div className="toggle-bar">
+            <div className="toggle-right"></div>
+            <div className="toggle-left"></div>
+          </div>
+          <div className="grey-bar"></div>
         </section>
       </div>
     </>
