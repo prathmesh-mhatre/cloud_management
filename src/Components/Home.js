@@ -2,13 +2,16 @@ import React from "react";
 import button_small from "../assets/buttons_small.png";
 import homeData from "../Data/homeData";
 import FolderCard from "./FolderCard";
-let i = "35%";
+import header_art_local from "../assets/header_art_local.png";
+import Nav from "./Nav";
+let i = homeData.freeData + "%";
 
 function Home() {
   console.log(homeData);
   return (
     <>
       <div className="home-container">
+        <img src={header_art_local} className="header-art"></img>
         <div className="sub-container">
           <section className="greeting-section">
             <div className="greeting">Hello {homeData.userName}, </div>
@@ -57,6 +60,7 @@ function Home() {
               );
             })}
           </section>
+          <Nav active={"1"} />
         </section>
       </div>
     </>

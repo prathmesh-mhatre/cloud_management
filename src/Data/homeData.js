@@ -1,6 +1,6 @@
 const homeData = {
   userName: "Prathmesh",
-  freeData: 35.2,
+  freeData: 32.5,
   folders: [
     {
       id: 1,
