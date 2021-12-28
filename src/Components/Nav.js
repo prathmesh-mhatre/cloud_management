@@ -28,8 +28,12 @@ const Nav = ({ active }) => {
             alt="home button"
           />
         </Link>
-        <Link to="/Home">
-          <img className="nav-action" src={nav_icon_action} alt="home button" />
+        <Link to="/action">
+          <img
+            className="nav-action"
+            src={nav_icon_action}
+            alt="action button"
+          />
         </Link>
         <Link to="/notifications">
           <img
@@ -39,14 +43,14 @@ const Nav = ({ active }) => {
                 ? nav_icon_notification_active
                 : nav_icon_notification
             }
-            alt="home button"
+            alt="notifications button"
           />
         </Link>
-        <Link to="/home">
+        <Link to="/profile">
           <img
             className={active === "4" ? "nav-item-up" : "nav-item"}
             src={active === "4" ? nav_icon_profile_active : nav_icon_profile}
-            alt="home button"
+            alt="profile button"
           />
         </Link>
       </nav>
