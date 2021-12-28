@@ -14,14 +14,14 @@ const Nav = ({ active }) => {
   return (
     <>
       <nav className="nav-bar">
-        <Link to="/Home">
+        <Link to="/home">
           <img
             className={active === "1" ? "nav-item-up" : "nav-item"}
             src={active === "1" ? nav_icon_home_active : nav_icon_home}
             alt="home button"
           />
         </Link>
-        <Link to="/Home">
+        <Link to="/local">
           <img
             className={active === "2" ? "nav-item-up" : "nav-item"}
             src={active === "2" ? nav_icon_local_active : nav_icon_local}
@@ -31,7 +31,7 @@ const Nav = ({ active }) => {
         <Link to="/Home">
           <img className="nav-action" src={nav_icon_action} alt="home button" />
         </Link>
-        <Link to="/Home">
+        <Link to="/notifications">
           <img
             className={active === "3" ? "nav-item-up" : "nav-item"}
             src={
@@ -42,7 +42,7 @@ const Nav = ({ active }) => {
             alt="home button"
           />
         </Link>
-        <Link to="/Home">
+        <Link to="/home">
           <img
             className={active === "4" ? "nav-item-up" : "nav-item"}
             src={active === "4" ? nav_icon_profile_active : nav_icon_profile}

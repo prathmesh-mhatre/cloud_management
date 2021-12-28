@@ -3,7 +3,9 @@ import button_small from "../assets/buttons_small.png";
 import homeData from "../Data/homeData";
 import FolderCard from "./FolderCard";
 import header_art_local from "../assets/header_art_local.png";
+import SearchBar from "./SearchBar";
 import Nav from "./Nav";
+
 let i = homeData.freeData + "%";
 
 function Home() {
@@ -32,11 +34,7 @@ function Home() {
         </div>
         <section className="files-folders">
           <div className="sub-container">
-            <input
-              className="search-bar"
-              type="text"
-              defaultValue="      Search"
-            />
+            <SearchBar />
           </div>
           <section className="tabs">
             <div className="tab">Files</div>
