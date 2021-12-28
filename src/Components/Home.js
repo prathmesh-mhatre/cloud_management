@@ -6,7 +6,7 @@ import header_art_local from "../assets/header_art_local.png";
 import SearchBar from "./SearchBar";
 import Nav from "./Nav";
 
-let i = homeData.freeData + "%";
+let i = 100 - homeData.freeData + "%";
 
 function Home() {
   console.log(homeData);

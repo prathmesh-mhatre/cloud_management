@@ -50,7 +50,7 @@ OnboardingStyles
   body {
     display: flex;
     justify-content: center;
-    background-color: black;
+    background-color: #ffffff;
   }
 }
 
@@ -202,9 +202,9 @@ HomePageStyle
 
 .storage-indicator {
   margin-top: 11px;
-  width: 305px;
+  width: 100%;
   height: 6px;
-  background: #ffff;
+  background: #dde6ff;
   border-radius: 5px;
 }
 
@@ -447,9 +447,19 @@ ProfilePageStyle
 ===============
 */
 
-.profile-heading {
-  margin-top: 18px;
+.profile-container {
+  background-color: #ffffff;
   width: 100%;
+  height: 800px;
+  padding: 0px 25px 0px 25px;
+}
+
+.heading-container {
+  display: flex;
+  margin-top: 18px;
+}
+
+.profile-heading {
   height: 46px;
   color: #355095;
   font-size: 34px;
@@ -459,7 +469,7 @@ ProfilePageStyle
 
 .profile-info {
   margin-top: 24px;
-  margin-left: 25px;
+  margin-right: 25px;
   display: flex;
 }
 
@@ -474,6 +484,7 @@ ProfilePageStyle
 .person-info {
   margin-top: 15px;
   margin-left: 20px;
+  margin-right: 25px;
 }
 
 .person-name {
@@ -482,7 +493,6 @@ ProfilePageStyle
   font-size: 18px;
   font-family: AvenirNext-DemiBold;
   font-weight: 600;
-  opacity: 75%;
 }
 
 .person-details {
@@ -492,4 +502,155 @@ ProfilePageStyle
   font-family: AvenirNext-Medium;
   font-weight: 500;
   opacity: 50%;
+}
+
+.edit-button {
+  margin-left: auto;
+  margin-top: 12px;
+  color: #355095;
+  height: 18px;
+  width: 16px;
+}
+
+.storage-info {
+  display: flex;
+  margin-top: 30px;
+}
+
+.big-text {
+  height: 33px;
+  color: #3d65c7;
+  font-size: 24px;
+  font-family: AvenirNext-DemiBold;
+  font-weight: 600;
+}
+
+.small-text {
+  margin: 6px;
+  height: 25px;
+  opacity: 45%;
+  color: #3d65c7;
+  font-size: 18px;
+  font-family: AvenirNext-DemiBold;
+  font-weight: 600;
+}
+
+.increase-storage {
+  margin-top: 20px;
+  display: flex;
+  width: 100%;
+  background-color: #ffffff;
+  height: 48px;
+  border: 2px solid rgb(255, 106, 162);
+  border-radius: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.increase-text {
+  color: rgb(255, 106, 162);
+  font-family: AvenirNext-DemiBold;
+  font-size: 16px;
+  font-weight: 600;
+  height: 22px;
+  text-align: center;
+  width: 169px;
+}
+
+.options {
+  margin-bottom: 15px;
+  display: flex;
+  width: 100%;
+  background: rgb(245, 247, 252);
+  border-radius: 7px;
+  align-items: center;
+  border: none;
+  padding: 20px 24px 20px 24px;
+}
+
+.option-text {
+  position: relative;
+  height: 22px;
+  color: rgb(36, 40, 51);
+  font-size: 16px;
+  font-family: AvenirNext-Medium;
+  font-weight: 500;
+}
+
+.sub-option {
+  display: block;
+  margin-left: auto;
+}
+
+.option-2text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.option-sub-text {
+  height: 19px;
+  color: rgb(36, 40, 51);
+  opacity: 50%;
+  font-size: 14px;
+  font-family: AvenirNext-Medium;
+  font-weight: 500;
+}
+
+.toggler {
+  margin-left: auto;
+}
+
+.toggler-active {
+  background: rgb(87, 134, 248);
+  border-radius: 16px;
+  height: 30px;
+  width: 52.5px;
+  padding: 4px 4px 4px 4px;
+}
+
+.toggler-inactive {
+  background: #959fba;
+  border-radius: 16px;
+  height: 30px;
+  width: 52.5px;
+  padding: 4px 4px 4px 4px;
+}
+.toggle-button-inactive {
+  width: 22px;
+  height: 22px;
+  background: rgb(255, 255, 255);
+  border-radius: 12px;
+  animation-name: of;
+  animation-duration: 0.5s;
+}
+
+.toggle-button-active {
+  width: 22px;
+  height: 22px;
+  background: rgb(255, 255, 255);
+  border-radius: 12px;
+  margin-left: auto;
+  animation-name: on;
+  animation-duration: 0.5s;
+}
+
+@keyframes on {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: 22.5px;
+  }
+}
+
+@keyframes of {
+  0% {
+    margin-left: 22.5px;
+  }
+  100% {
+    margin-left: 0px;
+  }
 }
