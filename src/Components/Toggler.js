@@ -7,12 +7,24 @@ const Toggler = () => {
   return (
     <div className="toggler">
       <div
-        className={toggle == 0 ? "toggler-inactive" : "toggler-active"}
-        onClick={() => (toggle == 0 ? setToggle(1) : setToggle(0))}
+        className={
+          toggle === 0
+            ? "toggler-inactive"
+            : toggle === 1
+            ? "toggler-inactive"
+            : "toggler-active"
+        }
+        onClick={() =>
+          toggle === 0 || toggle === 1 ? setToggle(2) : setToggle(1)
+        }
       >
         <div
           className={
-            toggle == 0 ? "toggle-button-inactive" : "toggle-button-active"
+            toggle === 0
+              ? "toggle-button-idle"
+              : toggle === 1
+              ? "toggle-button-inactive"
+              : "toggle-button-active"
           }
         ></div>
       </div>
