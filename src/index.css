@@ -397,6 +397,7 @@ NavStyle
 .nav-item {
   display: block;
   margin-top: 15px;
+  padding: 6px;
 }
 
 .nav-item-up {
@@ -626,7 +627,7 @@ ProfilePageStyle
   border-radius: 12px;
   margin-left: auto;
   animation-name: on;
-  animation-duration: 0.5s;
+  animation-duration: 0.2s;
 }
 
 .toggle-button-idle {

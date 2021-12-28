@@ -1,5 +1,5 @@
 const homeData = {
-  userName: "Prathmesh",
+  userName: "Jessie",
   freeData: 32.5,
   folders: [
     {

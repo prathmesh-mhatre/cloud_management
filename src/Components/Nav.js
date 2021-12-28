@@ -15,43 +15,53 @@ const Nav = ({ active }) => {
     <>
       <nav className="nav-bar">
         <Link to="/home">
-          <img
-            className={active === "1" ? "nav-item-up" : "nav-item"}
-            src={active === "1" ? nav_icon_home_active : nav_icon_home}
-            alt="home button"
-          />
+          <div>
+            <img
+              className={active === "1" ? "nav-item-up" : "nav-item"}
+              src={active === "1" ? nav_icon_home_active : nav_icon_home}
+              alt="home button"
+            />
+          </div>
         </Link>
         <Link to="/local">
-          <img
-            className={active === "2" ? "nav-item-up" : "nav-item"}
-            src={active === "2" ? nav_icon_local_active : nav_icon_local}
-            alt="home button"
-          />
+          <div className="nav">
+            <img
+              className={active === "2" ? "nav-item-up" : "nav-item"}
+              src={active === "2" ? nav_icon_local_active : nav_icon_local}
+              alt="home button"
+            />
+          </div>
         </Link>
         <Link to="/action">
-          <img
-            className="nav-action"
-            src={nav_icon_action}
-            alt="action button"
-          />
+          <div className="nav">
+            <img
+              className="nav-action"
+              src={nav_icon_action}
+              alt="action button"
+            />
+          </div>
         </Link>
         <Link to="/notifications">
-          <img
-            className={active === "3" ? "nav-item-up" : "nav-item"}
-            src={
-              active === "3"
-                ? nav_icon_notification_active
-                : nav_icon_notification
-            }
-            alt="notifications button"
-          />
+          <div className="nav">
+            <img
+              className={active === "3" ? "nav-item-up" : "nav-item"}
+              src={
+                active === "3"
+                  ? nav_icon_notification_active
+                  : nav_icon_notification
+              }
+              alt="notifications button"
+            />
+          </div>
         </Link>
         <Link to="/profile">
-          <img
-            className={active === "4" ? "nav-item-up" : "nav-item"}
-            src={active === "4" ? nav_icon_profile_active : nav_icon_profile}
-            alt="profile button"
-          />
+          <div className="nav">
+            <img
+              className={active === "4" ? "nav-item-up" : "nav-item"}
+              src={active === "4" ? nav_icon_profile_active : nav_icon_profile}
+              alt="profile button"
+            />
+          </div>
         </Link>
       </nav>
     </>
